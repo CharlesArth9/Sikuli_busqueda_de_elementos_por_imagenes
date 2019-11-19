@@ -1,0 +1,1 @@
+# Sikuli_busqueda_de_elementos_por_imagenes

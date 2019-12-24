@@ -15,12 +15,12 @@ public class Youtube{
           driver.manage().timeouts().pageLoadTimeout( 30, TimeUnit.SECONDS );
          // driver.get( "https://www.youtube.com/watch?v=OtQAMoXYqes&t=1110s" );
           driver.get( "https://www.google.com.co/" );
-
+          String path = "C:\\Users\\cmestral\\Desktop\\Proyecto_IT\\Sikuli_im\\";
           Screen screen = new Screen();
-      //    Pattern omitir = new Pattern("C:\\Users\\cmestral\\Desktop\\Proyecto_IT\\Sikuli_im\\omitir_anuncio.png");
-      //    Pattern mod_teatro = new Pattern("C:\\Users\\cmestral\\Desktop\\Proyecto_IT\\Sikuli_im\\yt_modoteatro.png");
-          Pattern menu = new Pattern("C:\\Users\\cmestral\\Desktop\\Proyecto_IT\\Sikuli_im\\menu_app_google.png");
-          Pattern traductor = new Pattern("C:\\Users\\cmestral\\Desktop\\Proyecto_IT\\Sikuli_im\\traductor.png");
+      //    Pattern omitir = new Pattern(path+"omitir_anuncio.png");
+      //    Pattern mod_teatro = new Pattern(path+"yt_modoteatro.png");
+          Pattern menu = new Pattern(path+"menu_app_google.png");
+          Pattern traductor = new Pattern(path+"traductor.png");
 
           screen.wait( menu, 5000 );
           screen.click( menu );
